@@ -122,21 +122,21 @@ const Nav: React.FC<NavProps> = ({ }): ReactElement => {
       >
         <ul className="list-reset lg:flex justify-end flex-1 items-center">
           <li className="mr-3">
-            <a className={path.includes("about") ? activeClass : inactiveClass} href="#about">
+            <a className={path.includes("about") ? activeClass : inactiveClass} href="#about" onClick={toggleNav}>
               <RoughNotation show={path.includes("about")} type="underline" iterations={4}>
                 Who are we?
               </RoughNotation>
             </a>
           </li>
           <li className="mr-3">
-            <a className={path.includes("services") ? activeClass : inactiveClass} href="#services">
+            <a className={path.includes("services") ? activeClass : inactiveClass} href="#services" onClick={toggleNav}>
               <RoughNotation type="underline" show={path.includes("services")} iterations={4}>
                 Our services
               </RoughNotation>
             </a>
           </li>
           <li className="mr-3">
-            <a className={path.includes("contact") ? activeClass : inactiveClass} href="#contact">
+            <a className={path.includes("contact") ? activeClass : inactiveClass} href="#contact" onClick={toggleNav}>
               <RoughNotation type="underline" show={path.includes("contact")} iterations={4}>
                 Get in touch
               </RoughNotation>
